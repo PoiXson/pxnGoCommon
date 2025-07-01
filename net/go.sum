@@ -1,0 +1,4 @@
+github.com/PoiXson/pxnGoCommon/utils v0.0.0-20250705155124-0fc63331c82a h1:OA0V2kg0XHw5Q+H7yJICbOfy7V7qI48u6iwjULImWsw=
+github.com/PoiXson/pxnGoCommon/utils v0.0.0-20250705155124-0fc63331c82a/go.mod h1:63+q5tY1gKOPMKcowUgS91M7M2oUMD4det8M3ygvWV8=
+github.com/gorilla/mux v1.8.1 h1:TuBL49tXwgrFYWhqrNgrUNEY92u81SPhu7sTdzQEiWY=
+github.com/gorilla/mux v1.8.1/go.mod h1:AKf9I4AEqPTmMytcMc0KkNouC66V3BtZ4qD5fmWSiMQ=
