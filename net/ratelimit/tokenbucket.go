@@ -1,12 +1,12 @@
 package ratelimit;
 
 import(
-	Log    "log"
 	Fmt    "fmt"
 	Net    "net"
 	Time   "time"
 	Sync   "sync"
 	PxnNet "github.com/PoiXson/pxnGoCommon/net"
+	Log    "github.com/PoiXson/pxnGoLog/src"
 );
 
 
@@ -119,7 +119,7 @@ func (tokbuck *TokBuckLim) CheckTupleIP(ip *PxnNet.TupIP) bool {
 			bucket.Tokens = tokbuck.TokensCap; }
 		bucket.Blocks++;
 		if bucket.Blocks > 0 && bucket.Blocks % 100 == 0 {
-			Fmt.Printf("Rate Limited %d times!  %s\n",
+			Log.Printf("Rate Limited %d times!  %s\n",
 				bucket.Blocks, ip.String()); }
 		return true;
 	}

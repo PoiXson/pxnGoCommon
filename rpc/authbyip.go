@@ -1,7 +1,6 @@
 package rpc;
 
 import(
-	Log     "log"
 	Fmt     "fmt"
 	Net     "net"
 	Context "context"
@@ -9,6 +8,7 @@ import(
 	GPeer   "google.golang.org/grpc/peer"
 	GStatus "google.golang.org/grpc/status"
 	GCodes  "google.golang.org/grpc/codes"
+	Log     "github.com/PoiXson/pxnGoLog/src"
 );
 
 

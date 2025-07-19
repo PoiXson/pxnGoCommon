@@ -1,3 +1,8 @@
+//TODO: finish comment headers
+// Copyright 2025 PoiXson
+// Use of this source code is governed by
+// the AGPL+PXN license, which can be found
+// in the LICENSE file.
 package utils;
 
 import(
@@ -48,4 +53,13 @@ func SleepR() {
 	max := Rand.Intn(55)+17;
 	sleep := Rand.Intn(max+min) + min;
 	Time.Sleep(Time.Duration(sleep) * Time.Millisecond);
+}
+
+
+
+// remove index from array
+func RemoveIndex[T any](array []T, index int) []T {
+	if index < 0 || index >= len(array) {
+		return array; }
+	return append(array[:index], array[index+1:]...);
 }

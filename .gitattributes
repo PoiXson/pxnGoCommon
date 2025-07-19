@@ -1,3 +1,6 @@
+# if unix:    git config --global core.autocrlf input
+# if windows: git config --global core.autocrlf true
+
 * text eol=lf
 
 .gitignore      text

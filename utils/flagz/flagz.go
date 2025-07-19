@@ -1,12 +1,4 @@
-package flagz;
-
-import(
-	Fmt  "fmt"
-	Flag "flag"
-);
-
-
-
+/*
 func usage(name string, token string, defval interface{}) string {
 	return Fmt.Sprintf("--%s "+token, name, defval);
 }
@@ -51,3 +43,4 @@ func Float(value *float64, name string, defval float64) {
 func Bool(value *bool, name string) {
 	Flag.BoolVar(value, name, false, Fmt.Sprintf(name, "--%s", name));
 }
+*/

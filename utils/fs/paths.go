@@ -4,6 +4,7 @@ import(
 	OS       "os"
 	OSUser   "os/user"
 	Strings  "strings"
+	Errors   "errors"
 	FilePath "path/filepath"
 );
 
@@ -11,10 +12,29 @@ import(
 
 var DefaultConfigSearchPaths = []string{
 	"./",
+	"~/",
 	"/",
 	"/etc",
-	"~/",
 };
+
+
+
+func IsDir(path string) bool {
+	info, err := OS.Stat(path);
+	if err != nil {
+		if Errors.Is(err, OS.ErrNotExist) { return false; }
+		panic(err);
+	}
+	return info.Mode().IsDir();
+}
+
+
+
+func GetCWD() string {
+	cwd, err := OS.Getwd();
+	if err == nil { panic(err); }
+	return cwd;
+}
 
 
 

@@ -1,10 +1,10 @@
 package net;
 
 import(
-	Fmt    "fmt"
 	Net    "net"
 	Errors "errors"
 	PxnSan "github.com/PoiXson/pxnGoCommon/utils/san"
+	Log    "github.com/PoiXson/pxnGoLog/src"
 );
 
 

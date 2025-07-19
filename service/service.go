@@ -2,13 +2,13 @@ package service;
 
 import(
 	OS      "os"
-	Log     "log"
 	Time    "time"
 	Sync    "sync"
 	Atomic  "sync/atomic"
 	Signal  "os/signal"
 	SysCall "syscall"
 	ThdSafe "github.com/hayageek/threadsafe"
+	Log     "github.com/PoiXson/pxnGoLog/src"
 );
 
 

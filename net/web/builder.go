@@ -1,8 +1,8 @@
 package web;
 
 import(
-	Log   "log"
 	Templ "html/template"
+	Log   "github.com/PoiXson/pxnGoLog/src"
 );
 
 

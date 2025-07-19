@@ -3,6 +3,7 @@ package fonts;
 import _ "embed";
 
 
+
 //go:embed Adamina.ttf
 var Adamina []byte;
 

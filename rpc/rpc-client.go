@@ -1,7 +1,6 @@
 package rpc;
 
 import(
-	Log     "log"
 	Fmt     "fmt"
 	Time    "time"
 	Sync    "sync"
@@ -15,6 +14,7 @@ import(
 	PxnSan  "github.com/PoiXson/pxnGoCommon/utils/san"
 	PxnNet  "github.com/PoiXson/pxnGoCommon/net"
 	PxnServ "github.com/PoiXson/pxnGoCommon/service"
+	Log     "github.com/PoiXson/pxnGoLog/src"
 );
 
 

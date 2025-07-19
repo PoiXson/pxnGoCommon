@@ -66,9 +66,9 @@ func (gen *Generator) NextUnsafe() (UID64, error) {
 }
 
 func NewUID64(id uint8, time int64, rnd byte, count uint8) (UID64, error) {
-	if id > MaxID          { return 0, Fmt.Errorf("ID can't exceed %d", MaxID); }
+	if id > MaxID          { return 0, Fmt.Errorf("ID can't exceed %d",         MaxID       ); }
 	if time > MaxTimestamp { return 0, Fmt.Errorf("Timestamp can't exceed 0x%X",MaxTimestamp); }
-	if count > MaxCounter  { return 0, Fmt.Errorf("Counter can't exceed 0x%X", MaxCounter); }
+	if count > MaxCounter  { return 0, Fmt.Errorf("Counter can't exceed 0x%X",  MaxCounter  ); }
 	return UID64(
 		(uint64(time) << 16) +
 		(uint64(rnd)  <<  8) +

@@ -2,12 +2,12 @@ package net;
 
 import(
 	OS      "os"
-	Log     "log"
 	Fmt     "fmt"
 	Net     "net"
 	Strings "strings"
 	StrConv "strconv"
 	PxnSan  "github.com/PoiXson/pxnGoCommon/utils/san"
+	Log     "github.com/PoiXson/pxnGoLog/src"
 );
 
 

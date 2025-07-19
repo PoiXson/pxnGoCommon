@@ -1,7 +1,6 @@
 package web;
 
 import(
-	Log     "log"
 	Fmt     "fmt"
 	Net     "net"
 	HTTP    "net/http"
@@ -15,6 +14,7 @@ import(
 	PxnUtil "github.com/PoiXson/pxnGoCommon/utils"
 	PxnNet  "github.com/PoiXson/pxnGoCommon/net"
 	PxnServ "github.com/PoiXson/pxnGoCommon/service"
+	Log     "github.com/PoiXson/pxnGoLog/src"
 );
 
 
